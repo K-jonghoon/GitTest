@@ -20,7 +20,7 @@ public class BoardServiceImpl implements IBoardService {
 
 	@Override
 	public int insertBoard(String content) {
-		logger.info("@@@@@@@@@@Service BoardServiceImpl insertBoard {}", content);
+		logger.info("&&&&&&Service BoardServiceImpl insertBoard {}", content);
 		int n =dao.insertBoard(content);
 		int m = (n>0)?dao.getMaxSeq():0;
 		return m;
